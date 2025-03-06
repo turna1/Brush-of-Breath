@@ -3,41 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Breath of Brush -Breath, Create, Transform</title>
+    <title>Breath of Brush - Generative AI Art</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
+        /* Soft, Soothing Gradient Background */
         body {
-            background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-            color: white;
+            background: linear-gradient(to bottom, #f8f1e4, #dfe7fd, #b5c7ea);
+            color: #333;
             font-family: 'Arial', sans-serif;
         }
+        
         .navbar {
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(255, 255, 255, 0.8);
         }
+
+        /* Hero Section */
         .hero {
             text-align: center;
-            padding: 60px;
+            padding: 80px 20px;
+            background: linear-gradient(to right, #f5eee6, #e3d1a8);
+            color: #333;
         }
         .hero h1 {
             font-size: 3rem;
             font-weight: bold;
         }
+
+        /* Sections Styling */
         .section {
             padding: 60px 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-in-out;
         }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Gallery Animations */
         .gallery img {
             width: 100%;
+            height: auto;
             border-radius: 10px;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.4s ease-in-out;
         }
         .gallery img:hover {
-            transform: scale(1.05);
+            transform: scale(1.08);
         }
+
+        /* Contact Form */
         .contact-form {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 30px;
             border-radius: 10px;
         }
     </style>
@@ -45,9 +66,9 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-        <a class="navbar-brand" href="#">Breath of Brush</a>
+        <a class="navbar-brand" href="#"><b>Breath of Brush</b></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -66,71 +87,80 @@
 <!-- Hero Section -->
 <section class="hero">
     <h1>Breath of Brush</h1>
-    <p>Where your breath transforms into generative AI art</p>
+    <p>Transforming your breath into generative AI art</p>
 </section>
 
 <!-- Intro Video -->
-<div class="container text-center">
+<div class="container text-center section">
     <h2>Watch the Experience</h2>
     <iframe width="100%" height="400" 
-        src="https://youtu.be/6m8OT3DC4oU" 
+        src="https://www.youtube.com/embed/6m8OT3DC4oU" 
         frameborder="0" allowfullscreen>
     </iframe>
 </div>
 
-
 <!-- Blog-Style Introduction -->
-<section id="about" class="section">
-    <div class="container text-center">
-        <h2>What is Breath of Brush?</h2>
-        <p>Breath of Brush is a fusion of **sensory art, AI, and biofeedback**—a platform that transforms your breath into a **living, evolving artwork**.</p>
-        <p>In our modern world, stress and distractions disconnect us from our own breath. **But what if your breath could become a form of expression?** What if the simple act of breathing could create something beautiful?</p>
-        <h3>🌿 The Power of Sensory Art & Biofeedback</h3>
-        <p>Biofeedback is used in **meditation, therapy, and mindfulness practices** to help people regulate stress and anxiety. By visually representing your breath, we offer an immersive way to experience **calmness, creativity, and self-awareness**.</p>
-        <h3>🎨 What Makes Breath of Brush Unique?</h3>
-        <p>Unlike traditional meditation apps, Breath of Brush **doesn't just guide you—it creates with you.** As you breathe, Generative AI listens, understands, and **paints** with your breath, making each artwork **completely unique**.</p>
-    </div>
+<section id="about" class="container text-center section">
+    <h2>What is Breath of Brush?</h2>
+    <p>Breath of Brush merges **sensory art, AI, and biofeedback**—a platform that transforms your breath into a **living, evolving artwork**.</p>
+    <p>By using AI-powered generative art, it turns each inhale and exhale into a **personalized visual masterpiece**, connecting breathing with mindfulness.</p>
 </section>
 
 <!-- Technology Breakdown -->
-<section id="technology" class="section">
-    <div class="container text-center">
-        <h2>How It Works: AI-Powered Art</h2>
-        <p>Using a blend of **machine learning, audio processing, and generative AI**, we translate **breath into art**.</p>
-        <ul>
-            <li>🌀 **Breath Recording UI** - Captures breathing patterns using microphone input.</li>
-            <li>📊 **Pattern Analysis** - Converts breathing sound waves into a **spectrogram using Python**.</li>
-            <li>🤖 **AI Interpretation** - **Llama versatile model** applies **Chain-of-Thought prompting** to describe the pattern meaningfully.</li>
-            <li>🎨 **Art Generation** - The final description is sent to **Midjourney-2 AI** to generate breathtaking visuals.</li>
-        </ul>
-        <p>Each breath is unique, and so is every artwork created by **Breath of Brush**.</p>
-    </div>
+<section id="technology" class="container text-center section">
+    <h2>How It Works</h2>
+    <ul>
+        <li>🌀 **Breath Recording UI** - Captures breathing sound waves.</li>
+        <li>📊 **Pattern Analysis** - Converts breath waves into a spectrogram using Python.</li>
+        <li>🤖 **AI Interpretation** - Uses **Llama versatile model** with **Chain-of-Thought prompting**.</li>
+        <li>🎨 **Art Generation** - AI-generated visuals created via **Midjourney-2**.</li>
+    </ul>
 </section>
 
-<!-- Gallery with Animation -->
-<section id="gallery" class="section">
-    <div class="container text-center">
-        <h2>Gallery</h2>
-        <div class="row">
-            <div class="col-md-4"><img src="example1.jpg" class="gallery img-fluid"></div>
-            <div class="col-md-4"><img src="example2.jpg" class="gallery img-fluid"></div>
-            <div class="col-md-4"><img src="example3.jpg" class="gallery img-fluid"></div>
-        </div>
+<!-- Gallery with Animations -->
+<section id="gallery" class="container text-center section">
+    <h2>Gallery</h2>
+    <div class="row">
+        <div class="col-md-6"><img src="https://github.com/turna1/Brush-of-Breath/blob/main/2WUqeF2.jpg?raw=true" class="gallery img-fluid"></div>
+        <div class="col-md-6"><img src="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0156.JPG?raw=true" class="gallery img-fluid"></div>
     </div>
 </section>
 
 <!-- Future Projects -->
-<section id="future" class="section">
-    <div class="container text-center">
-        <h2>What's Next?</h2>
-        <ul>
-            <li>🌍 **Breath-powered VR relaxation experiences**</li>
-            <li>📱 **Wearable integration for real-time AI art on mobile**</li>
-            <li>🧘‍♂️ **Mental health research partnerships for therapy applications**</li>
-        </ul>
+<section id="future" class="container text-center section">
+    <h2>What's Next?</h2>
+    <ul>
+        <li>🌍 **Breath-powered VR relaxation experiences**</li>
+        <li>📱 **Wearable integration for real-time AI art on mobile**</li>
+        <li>🧘‍♂️ **Therapeutic research for anxiety & wellness**</li>
+    </ul>
+</section>
+
+<!-- Contact Form (Emails Sent to 2 Addresses) -->
+<section id="contact" class="container text-center section">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+        <form action="https://formsubmit.co/a.elsaddik@uottawa.ca,rferd068@uottawa.ca" method="POST">
+            <input type="hidden" name="_subject" value="New Contact Request from Breath of Brush">
+            <input type="text" class="form-control mb-3" name="name" placeholder="Your Name" required>
+            <input type="email" class="form-control mb-3" name="email" placeholder="Your Email" required>
+            <textarea class="form-control mb-3" name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
     </div>
 </section>
 
+<script>
+    // Smooth Fade-in Animation on Scroll
+    document.addEventListener("scroll", function() {
+        document.querySelectorAll('.section').forEach(section => {
+            let position = section.getBoundingClientRect().top;
+            if (position < window.innerHeight - 100) {
+                section.classList.add('visible');
+            }
+        });
+    });
+</script>
 
 </body>
 </html>

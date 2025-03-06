@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
+        /* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
         /* Background Image with Overlay */
         body {
             background: url('https://raw.githubusercontent.com/turna1/Brush-of-Breath/main/image_fx_%20(1).jpg') no-repeat center center fixed;
@@ -124,20 +142,38 @@
 </div>
 
 <!-- What is Breath of Brush? -->
-<section id="about" class="container text-center section">
+<section id="about" class="container text-center section fade-in">
     <h2>What is Breath of Brush?</h2>
+
     <p><b>Breathing and Art—Two Timeless Practices for Relaxation and Self-Expression.</b></p>
-    
-    <p>For centuries, controlled breathing has been used in meditation, therapy, and mindfulness to promote calmness and mental clarity. At the same time, art has been a powerful tool for self-expression and emotional healing.</p>
-    
-    <p>What if these two elements—breathing and art—could come together to create something extraordinary?</p>
 
-    <p>Inspired by the concepts of biofeedback and sensory art, <b>Breath of Brush</b> uses your unique breathing patterns to generate dynamic, AI-driven artwork. This process  transforms your breath into a beautiful visual experience by helping you explore different breathing rhythms for relaxation and creativity.</p>
+    <p>
+        For centuries, controlled breathing has been used in <b>meditation, therapy, and mindfulness</b> 
+        to promote calmness and mental clarity. At the same time, <b>art has been a powerful tool</b> 
+        for self-expression and emotional healing.
+    </p>
 
-    <p>Each inhale and exhale influences the colors, strokes, and motion of the generative artwork—making every piece unique, just like your breath.</p>
+    <p><i>What if these two elements—breathing and art—could come together to create something extraordinary?</i></p>
 
-    <p>🌿 <b>Experience it yourself!</b> Try the <a href="[https://github.com/turna1/Sensory-Generative-Art-Using-BioFeedback]" target="_blank"><b>open-source tool</b></a> to see how your breath can shape art in real-time.</p>
+    <p>
+        Inspired by <b>biofeedback</b> (e.g., tracking breathing patterns to regulate stress in meditation apps) 
+        and <b>sensory art generation</b> (e.g., interactive installations where sound or movement creates dynamic visuals), 
+        <b>Breath of Brush</b> uses your unique <b>breathing patterns</b> to generate dynamic, AI-driven artwork. 
+        This process transforms your breath into a beautiful visual experience while encouraging 
+        <b>different breathing rhythms</b> for relaxation and creativity.
+    </p>
+
+    <p>
+        Each inhale and exhale influences the <b>colors, strokes, and motion</b> of the generative artwork—
+        making every piece unique, just like your breath.
+    </p>
+
+    <p>
+        🌿 <b>Experience it yourself!</b> Try the <a href="https://github.com/turna1/Sensory-Generative-Art-Using-BioFeedback" target="_blank"><b>open-source tool</b></a> 
+        to see how your breath can shape an artwork.
+    </p>
 </section>
+
 
 <!-- Gallery with Animations -->
 <section id="gallery" class="container text-center section">

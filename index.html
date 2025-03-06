@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* Background Image with Overlay */
+        body {
+            background: url('https://raw.githubusercontent.com/turna1/Brush-of-Breath/main/image_fx_%20(1).jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.5); /* Light overlay */
+            z-index: -1;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(255, 255, 255, 0.85);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        .section {
+            padding: 60px 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-in-out;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Gallery */
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.4s ease-in-out, opacity 0.4s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        /* Cards */
+        .card {
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#"><b>Brush of Breath - Breathe, Create, Transform</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">What is it?</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#technology">Technology</a></li>
+                <li class="nav-item"><a class="nav-link" href="#future">Future Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Breath of Brush</h1>
+    <p>Transforming your breath into generative AI art</p>
+</section>
+
+<!-- Video -->
+<div class="container text-center section">
+    <h2>Watch the Experience</h2>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/6m8OT3DC4oU" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<!-- What is Breath of Brush? -->
+<section id="about" class="container text-center section">
+    <h2>What is Breath of Brush?</h2>
+    <p><b>Breathing and Art—Two Timeless Practices for Relaxation and Self-Expression.</b></p>
+    
+    <p>For centuries, controlled breathing has been used in meditation, therapy, and mindfulness to promote **calmness and mental clarity**. At the same time, **art has been a powerful tool for self-expression and emotional healing**.</p>
+    
+    <p>What if these two elements—breathing and art—could come together to create something extraordinary?</p>
+
+    <p>Inspired by the concepts of **biofeedback and sensory art**, <b>Breath of Brush</b> uses your unique **breathing patterns to generate dynamic, AI-driven artwork**. This process not only transforms your breath into a beautiful visual experience but also encourages mindful breathing techniques, helping you explore different breathing rhythms for relaxation and creativity.</p>
+
+    <p>Each inhale and exhale influences the colors, strokes, and motion of the generative artwork—making every piece unique, just like your breath.</p>
+
+    <p>🌿 <b>Experience it yourself!</b> Try the <a href="[your-opensource-tool-link]" target="_blank"><b>open-source tool</b></a> to see how your breath can shape art in real-time.</p>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="container text-center section">
+    <h2>Gallery</h2>
+    <div class="row">
+        <div class="col-md-6"><img src="https://github.com/turna1/Brush-of-Breath/blob/main/2WUqeF2.jpg?raw=true" class="gallery img-fluid"></div>
+        <div class="col-md-6"><img src="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0156.JPG?raw=true" class="gallery img-fluid"></div>
+    </div>
+</section>
+
+<!-- Future Projects -->
+<section id="future" class="container text-center section">
+    <h2>What's Next?</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/immersive.jpg?raw=true" class="card-img-top">
+                <div class="card-body">
+                    <h5>Immersive Relaxation</h5>
+                    <p>Breath-controlled generative art in VR, shaping serene landscapes as you breathe.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/smartwatch.jpg?raw=true" class="card-img-top">
+                <div class="card-body">
+                    <h5>Wearable AI Art</h5>
+                    <p>Expanding to smartwatches for real-time mindfulness and generative breath art.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/therapeutic.jpg?raw=true" class="card-img-top">
+                <div class="card-body">
+                    <h5>AI for Therapy</h5>
+                    <p>Collaborating with mental health experts for AI-assisted breathing therapy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section id="contact" class="container text-center section">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+        <form action="https://formsubmit.co/rferd068@uottawa.ca" method="POST">
+            <input type="text" class="form-control mb-3" name="name" placeholder="Your Name" required>
+            <input type="email" class="form-control mb-3" name="email" placeholder="Your Email" required>
+            <textarea class="form-control mb-3" name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("scroll", function() {
+        document.querySelectorAll('.section').forEach(section => {
+            if (section.getBoundingClientRect().top < window.innerHeight - 100) {
+                section.classList.add('visible');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

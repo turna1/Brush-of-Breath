@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
+        
+    /* Background image with overlay */
+body {
+    background: url('https://raw.githubusercontent.com/turna1/Brush-of-Breath/main/image_fx_%20(1).jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+/* Add a semi-transparent overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4); /* Adjust opacity here */
+    z-index: -1;
+}
+
         /* Soft, Soothing Gradient Background */
         body {
             background: linear-gradient(to bottom, #f8f1e4, #dfe7fd, #b5c7ea);
@@ -102,8 +122,8 @@
 <!-- Blog-Style Introduction -->
 <section id="about" class="container text-center section">
     <h2>What is Breath of Brush?</h2>
-    <p>Breath of Brush merges **sensory art, AI, and biofeedback**—a platform that transforms your breath into a **living, evolving artwork**.</p>
-    <p>By using AI-powered generative art, it turns each inhale and exhale into a **personalized visual masterpiece**, connecting breathing with mindfulness.</p>
+    <p>Breath of Brush merges sensory art, AI, and biofeedback—a platform that transforms your breath into a living, evolving artwork.</p>
+    <p>By using AI-powered generative art, it turns each inhale and exhale into a personalized visual masterpiece, connecting breathing with mindfulness.</p>
 </section>
 
 <!-- Technology Breakdown -->
@@ -139,7 +159,7 @@
         <!-- VR Relaxation -->
         <div class="col-md-4">
             <div class="card h-100 shadow-lg border-0">
-                <img src="https://source.unsplash.com/400x250/?vr,meditation" class="card-img-top" alt="VR Relaxation">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/immersive.jpg" class="card-img-top" alt="VR Relaxation">
                 <div class="card-body">
                     <h5 class="card-title">🌍 Breath-Powered Immersive Relaxation</h5>
                     <p class="card-text">Imagine a virtual world where your breath shapes serene landscapes. This project aims to integrate breath-controlled generative art into VR, offering immersive relaxation experiences that adapt in real-time to your breathing.</p>
@@ -150,7 +170,7 @@
         <!-- Wearable Integration -->
         <div class="col-md-4">
             <div class="card h-100 shadow-lg border-0">
-                <img src="https://source.unsplash.com/400x250/?smartwatch,technology" class="card-img-top" alt="Wearable AI Art">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/smartwatch.jpg" class="card-img-top" alt="Wearable AI Art">
                 <div class="card-body">
                     <h5 class="card-title">📱 Wearable AI Art Integration</h5>
                     <p class="card-text"> Breath of Brush can be extended to smartwatches and biofeedback wearables. This will allow users to visualize their breath-generated art directly on mobile devices in real-time, enabling mindfulness on the go.</p>
@@ -161,7 +181,7 @@
         <!-- Therapeutic Research -->
         <div class="col-md-4">
             <div class="card h-100 shadow-lg border-0">
-                <img src="https://source.unsplash.com/400x250/?therapy,wellness" class="card-img-top" alt="Therapeutic AI">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/therapeutic.jpg" class="card-img-top" alt="Therapeutic AI">
                 <div class="card-body">
                     <h5 class="card-title">🧘‍♂️ AI for Anxiety & Therapy</h5>
                     <p class="card-text">This project can be extended to collaborate with mental health experts to study how generative breath art can aid in anxiety reduction and therapy. Future applications may include AI-assisted guided breathing and stress visualization tools.</p>
@@ -176,7 +196,7 @@
 <section id="contact" class="container text-center section">
     <h2>Contact Us</h2>
     <div class="contact-form">
-        <form action="https://formsubmit.co/a.elsaddik@uottawa.ca,rferd068@uottawa.ca" method="POST">
+        <form action="https://formsubmit.co/rferd068@uottawa.ca" method="POST">
             <input type="hidden" name="_subject" value="New Contact Request from Breath of Brush">
             <input type="text" class="form-control mb-3" name="name" placeholder="Your Name" required>
             <input type="email" class="form-control mb-3" name="email" placeholder="Your Email" required>

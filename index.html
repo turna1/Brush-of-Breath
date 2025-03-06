@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+
+        /* Background Image with Overlay */
+        body {
+            background: url('https://raw.githubusercontent.com/turna1/Brush-of-Breath/main/image_fx_%20(1).jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.5); /* Light overlay */
+            z-index: -1;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(255, 255, 255, 0.85);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        .section {
+            padding: 60px 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-in-out;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Gallery */
+    .gallery img {
+    width: 100%;
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images are cropped properly */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s;
+    }
+
+ .gallery img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+        /* Cards */
+        .card {
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#"><b></b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">What is it?</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#technology">Technology</a></li>
+                <li class="nav-item"><a class="nav-link" href="#future">Future Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Brush of Breath</h1>
+    <p>Transforming your breath into sensory artwork</p>
+</section>
+
+<!-- Video -->
+<div class="container text-center section">
+    <h2>Watch the Experience</h2>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/6m8OT3DC4oU" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<!-- What is Breath of Brush? -->
+<section id="about" class="container text-center section fade-in">
+    <h2>What is Breath of Brush?</h2>
+
+    <p><b>Breathing and Art are Two Timeless Practices for Relaxation and Self-Expression.</b></p>
+
+    <p>
+        For centuries, controlled breathing has been used in <b>meditation, therapy, and mindfulness</b> 
+        to promote calmness and mental clarity. At the same time, <b>art has been a powerful tool</b> 
+        for self-expression and emotional healing.
+    </p>
+
+    <p><i>What if these two elements, breathing and art could come together to create something extraordinary?</i></p>
+
+    <p>
+        Inspired by <b>biofeedback</b> (e.g., tracking breathing patterns to regulate stress in meditation apps) 
+        and <b>sensory art generation</b> (e.g., interactive installations where sound or movement creates dynamic visuals), 
+        <b>Breath of Brush</b> uses your unique <b>breathing patterns</b> to generate dynamic, AI-driven artwork. 
+        This process transforms your breath into a beautiful visual experience while encouraging 
+        <b>different breathing rhythms</b> for relaxation and creativity.
+    </p>
+
+    <p>
+        Each inhale and exhale influences the <b>colors, strokes, and motion</b> of the generative artwork
+        making every piece unique, just like your breath.
+    </p>
+
+    <p>
+        🌿 <b>Experience it yourself!</b> Learn More and Try the <a href="https://github.com/turna1/Sensory-Generative-Art-Using-BioFeedback" target="_blank"><b>open-source tool</b></a> 
+        to see how your breath can shape an artwork.
+    </p>
+</section>
+
+
+<!-- Gallery with Animations -->
+<section id="gallery" class="container text-center section">
+    <h2>Gallery</h2>
+    <div class="row">
+        <!-- Image 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/2WUqeF2.jpg?raw=true" class="gallery img-fluid card-img-top" alt="Art 1">
+                <div class="card-body">
+                    <a href="https://github.com/turna1/Brush-of-Breath/blob/main/2WUqeF2.jpg?raw=true" download class="btn btn-sm btn-primary"><i class="fa fa-download"></i> Download</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0156.JPG?raw=true" class="gallery img-fluid card-img-top" alt="Art 2">
+                <div class="card-body">
+                    <a href="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0156.JPG?raw=true" download class="btn btn-sm btn-primary"><i class="fa fa-download"></i> Download</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0154.JPG?raw=true" class="gallery img-fluid card-img-top" alt="Art 3">
+                <div class="card-body">
+                    <a href="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0154.JPG?raw=true" download class="btn btn-sm btn-primary"><i class="fa fa-download"></i> Download</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0423.JPG?raw=true" class="gallery img-fluid card-img-top" alt="Art 4">
+                <div class="card-body">
+                    <a href="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0423.JPG?raw=true" download class="btn btn-sm btn-primary"><i class="fa fa-download"></i> Download</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0424.JPG?raw=true" class="gallery img-fluid card-img-top" alt="Art 5">
+                <div class="card-body">
+                    <a href="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0424.JPG?raw=true" download class="btn btn-sm btn-primary"><i class="fa fa-download"></i> Download</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/3dYiGUu.jpg?raw=true" class="gallery img-fluid card-img-top" alt="Art 6">
+                <div class="card-body">
+                    <a href="https://github.com/turna1/Brush-of-Breath/blob/main/3dYiGUu.jpg?raw=true" download class="btn btn-sm btn-primary"><i class="fa fa-download"></i> Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Future Projects -->
+<section id="future" class="container text-center section">
+    <h2>What's Next?</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/immersive.jpg?raw=true" class="card-img-top">
+                <div class="card-body">
+                    <h5>Immersive Relaxation</h5>
+                    <p>Imagine a virtual world where your breath shapes serene landscapes. This project aims to integrate breath-controlled generative art into VR, offering immersive relaxation experiences that adapt in real-time to your breathing.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/smartwatch.jpg?raw=true" class="card-img-top">
+                <div class="card-body">
+                    <h5>Wearable AI Art</h5>
+                    <p>Breath of Brush can be extended to smartwatches and biofeedback wearables. This will allow users to visualize their breath-generated art directly on mobile devices in real-time, enabling mindfulness on the go.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/therapeutic.jpg?raw=true" class="card-img-top">
+                <div class="card-body">
+                    <h5>AI for Therapy</h5>
+                    <p>This project can be extended to collaborate with mental health experts to study how generative breath art can aid in anxiety reduction and therapy. Future applications may include AI-assisted guided breathing and stress visualization tools.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Form -->
+<section id="contact" class="container text-center section">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+        <form id="contactForm" action="https://formsubmit.co/rferd068@uottawa.ca" method="POST">
+            <input type="hidden" name="_next" value="javascript:void(0);"> <!-- Prevents page redirect -->
+            <input type="hidden" name="_subject" value="New Contact Request from Breath of Brush">
+            
+            <input type="text" class="form-control mb-3" name="name" placeholder="Your Name" required>
+            <input type="email" class="form-control mb-3" name="email" placeholder="Your Email" required>
+            <textarea class="form-control mb-3" name="message" placeholder="Your Message" rows="4" required></textarea>
+            
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        <!-- Confirmation Message (Hidden Initially) -->
+        <div id="confirmationMessage" class="alert alert-success mt-3" style="display: none;">
+            <i class="fa fa-check-circle"></i> Thank you for contacting us! We will get back to you soon.
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevents default form submission behavior
+
+        let form = this;
+        let confirmationMessage = document.getElementById("confirmationMessage");
+
+        // Submit form using fetch
+        fetch(form.action, {
+            method: "POST",
+            body: new FormData(form)
+        }).then(response => {
+            if (response.ok) {
+                form.reset(); // Clear form fields
+                confirmationMessage.style.display = "block"; // Show success message
+            } else {
+                alert("Something went wrong. Please try again.");
+            }
+        }).catch(error => {
+            alert("Error submitting form. Please try again later.");
+        });
+    });
+</script>
+
+
+</body>
+</html>

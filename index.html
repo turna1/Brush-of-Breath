@@ -59,16 +59,18 @@
         }
 
         /* Gallery */
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            transition: transform 0.4s ease-in-out, opacity 0.4s;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-            opacity: 0.9;
-        }
+    .gallery img {
+    width: 100%;
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images are cropped properly */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s;
+    }
+
+ .gallery img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
 
         /* Cards */
         .card {
@@ -93,7 +95,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-        <a class="navbar-brand" href="#"><b>Brush of Breath - Breathe, Create, Transform</b></a>
+        <a class="navbar-brand" href="#"><b></b></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -111,8 +113,8 @@
 
 <!-- Hero Section -->
 <section class="hero">
-    <h1>Breath of Brush</h1>
-    <p>Transforming your breath into generative AI art</p>
+    <h1>Brush of Breath</h1>
+    <p>Transforming your breath into sensory artwork</p>
 </section>
 
 <!-- Video -->
@@ -126,25 +128,83 @@
     <h2>What is Breath of Brush?</h2>
     <p><b>Breathing and Art—Two Timeless Practices for Relaxation and Self-Expression.</b></p>
     
-    <p>For centuries, controlled breathing has been used in meditation, therapy, and mindfulness to promote **calmness and mental clarity**. At the same time, **art has been a powerful tool for self-expression and emotional healing**.</p>
+    <p>For centuries, controlled breathing has been used in meditation, therapy, and mindfulness to promote calmness and mental clarity. At the same time, art has been a powerful tool for self-expression and emotional healing.</p>
     
     <p>What if these two elements—breathing and art—could come together to create something extraordinary?</p>
 
-    <p>Inspired by the concepts of **biofeedback and sensory art**, <b>Breath of Brush</b> uses your unique **breathing patterns to generate dynamic, AI-driven artwork**. This process not only transforms your breath into a beautiful visual experience but also encourages mindful breathing techniques, helping you explore different breathing rhythms for relaxation and creativity.</p>
+    <p>Inspired by the concepts of biofeedback and sensory art, <b>Breath of Brush</b> uses your unique breathing patterns to generate dynamic, AI-driven artwork. This process  transforms your breath into a beautiful visual experience by helping you explore different breathing rhythms for relaxation and creativity.</p>
 
     <p>Each inhale and exhale influences the colors, strokes, and motion of the generative artwork—making every piece unique, just like your breath.</p>
 
-    <p>🌿 <b>Experience it yourself!</b> Try the <a href="[your-opensource-tool-link]" target="_blank"><b>open-source tool</b></a> to see how your breath can shape art in real-time.</p>
+    <p>🌿 <b>Experience it yourself!</b> Try the <a href="[https://github.com/turna1/Sensory-Generative-Art-Using-BioFeedback]" target="_blank"><b>open-source tool</b></a> to see how your breath can shape art in real-time.</p>
 </section>
 
-<!-- Gallery -->
+<!-- Gallery with Animations -->
 <section id="gallery" class="container text-center section">
     <h2>Gallery</h2>
     <div class="row">
-        <div class="col-md-6"><img src="https://github.com/turna1/Brush-of-Breath/blob/main/2WUqeF2.jpg?raw=true" class="gallery img-fluid"></div>
-        <div class="col-md-6"><img src="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0156.JPG?raw=true" class="gallery img-fluid"></div>
+        <!-- Image 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/2WUqeF2.jpg?raw=true" class="gallery img-fluid card-img-top" alt="Art 1">
+                <div class="card-body">
+                    <a href="https://github.com/turna1/Brush-of-Breath/blob/main/2WUqeF2.jpg?raw=true" download class="btn btn-sm btn-primary"><i class="fa fa-download"></i> Download</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0156.JPG?raw=true" class="gallery img-fluid card-img-top" alt="Art 2">
+                <div class="card-body">
+                    <a href="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0156.JPG?raw=true" download class="btn btn-sm btn-primary"><i class="fa fa-download"></i> Download</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0154.JPG?raw=true" class="gallery img-fluid card-img-top" alt="Art 3">
+                <div class="card-body">
+                    <a href="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0154.JPG?raw=true" download class="btn btn-sm btn-primary"><i class="fa fa-download"></i> Download</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0423.JPG?raw=true" class="gallery img-fluid card-img-top" alt="Art 4">
+                <div class="card-body">
+                    <a href="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0423.JPG?raw=true" download class="btn btn-sm btn-primary"><i class="fa fa-download"></i> Download</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0424.JPG?raw=true" class="gallery img-fluid card-img-top" alt="Art 5">
+                <div class="card-body">
+                    <a href="https://github.com/turna1/Brush-of-Breath/blob/main/IMG_0424.JPG?raw=true" download class="btn btn-sm btn-primary"><i class="fa fa-download"></i> Download</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-lg border-0">
+                <img src="https://github.com/turna1/Brush-of-Breath/blob/main/3dYiGUu.jpg?raw=true" class="gallery img-fluid card-img-top" alt="Art 6">
+                <div class="card-body">
+                    <a href="https://github.com/turna1/Brush-of-Breath/blob/main/3dYiGUu.jpg?raw=true" download class="btn btn-sm btn-primary"><i class="fa fa-download"></i> Download</a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
 
 <!-- Future Projects -->
 <section id="future" class="container text-center section">
@@ -155,7 +215,7 @@
                 <img src="https://github.com/turna1/Brush-of-Breath/blob/main/immersive.jpg?raw=true" class="card-img-top">
                 <div class="card-body">
                     <h5>Immersive Relaxation</h5>
-                    <p>Breath-controlled generative art in VR, shaping serene landscapes as you breathe.</p>
+                    <p>Imagine a virtual world where your breath shapes serene landscapes. This project aims to integrate breath-controlled generative art into VR, offering immersive relaxation experiences that adapt in real-time to your breathing.</p>
                 </div>
             </div>
         </div>
@@ -165,7 +225,7 @@
                 <img src="https://github.com/turna1/Brush-of-Breath/blob/main/smartwatch.jpg?raw=true" class="card-img-top">
                 <div class="card-body">
                     <h5>Wearable AI Art</h5>
-                    <p>Expanding to smartwatches for real-time mindfulness and generative breath art.</p>
+                    <p>Breath of Brush can be extended to smartwatches and biofeedback wearables. This will allow users to visualize their breath-generated art directly on mobile devices in real-time, enabling mindfulness on the go.</p>
                 </div>
             </div>
         </div>
@@ -175,7 +235,7 @@
                 <img src="https://github.com/turna1/Brush-of-Breath/blob/main/therapeutic.jpg?raw=true" class="card-img-top">
                 <div class="card-body">
                     <h5>AI for Therapy</h5>
-                    <p>Collaborating with mental health experts for AI-assisted breathing therapy.</p>
+                    <p>This project can be extended to collaborate with mental health experts to study how generative breath art can aid in anxiety reduction and therapy. Future applications may include AI-assisted guided breathing and stress visualization tools.</p>
                 </div>
             </div>
         </div>
